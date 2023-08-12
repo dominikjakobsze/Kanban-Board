@@ -5,7 +5,13 @@ const HeightControl = () => {
     const newColumnHeight = newColumn.offsetHeight;
     console.log(newColumnHeight);
     const allColumns = document.querySelectorAll('[data-column="column"]');
-    console.log(allColumns);
+    const allSubColumns = document.querySelectorAll('[data-column="sub-column"]');
+    allColumns.forEach(column => {
+        column.style.height = `${newColumnHeight}px`;
+    });
+    allSubColumns.forEach(subColumn => {
+        subColumn.style.height = `${newColumnHeight}px`;
+    });
 };
 
 HeightControl();
