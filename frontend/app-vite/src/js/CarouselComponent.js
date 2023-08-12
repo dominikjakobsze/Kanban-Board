@@ -25,7 +25,13 @@ export const CarouselComponentKill = () => {
 export const CarouselControls = () => {
     const prevBtn = document.querySelector('[data-carousel="prev-btn"]');
     const nextBtn = document.querySelector('[data-carousel="next-btn"]');
-    prevBtn.addEventListener('click', carouselApi.scrollPrev, false);
-    nextBtn.addEventListener('click', carouselApi.scrollNext, false);
+    prevBtn.addEventListener('click', () => {
+        console.log(carouselApi.canScrollPrev())
+        carouselApi.scrollPrev();
+    });
+    nextBtn.addEventListener('click', () => {
+        console.log(carouselApi.canScrollNext())
+        carouselApi.scrollNext();
+    });
     console.log("carousel controls ON");
 };
