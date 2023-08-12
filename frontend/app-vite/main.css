@@ -1,6 +1,12 @@
 .h-dvh-full{
     height: 100dvh;
 }
+.border-right-board{
+    border-right: 1px solid #606060;
+}
+.border-bottom-board{
+    border-bottom: 1px solid #606060;
+}
 
 
 

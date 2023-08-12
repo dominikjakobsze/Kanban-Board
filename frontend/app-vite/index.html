@@ -7,13 +7,16 @@
     <link href="./main.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="w-full h-dvh-full">
+    <div class="w-full h-dvh-full overflow-hidden">
 
-      <div class="grid lg:grid-cols-4 bg-red-100 w-full h-full">
-        <div class="bg-blue-100 w-full"></div>
-        <div class="bg-blue-100 lg:col-span-3 grid grid-cols-1 w-full gap-2">
-          <div class="bg-green-100 w-full"></div>
-          <div class="bg-green-100 w-full"></div>
+      <div class="grid lg:grid-cols-4 xl:grid-cols-5 w-full h-full">
+        <div class="bg-[#2C2C37] w-full h-full border-right-board"></div>
+        <div class=" lg:col-span-3 w-full flex flex-row flex-wrap content-start">
+          <div class="bg-[#2C2C37] flex-[0_0_100%] h-[10%] border-bottom-board"></div>
+          <div class="bg-[#21212C] flex-[0_0_100%] h-[90%] flex flex-row flex-nowrap">
+            <div data-column="column" class="w-full"></div>
+            <div data-column="column"></div>
+          </div>
         </div>
       </div>
 
