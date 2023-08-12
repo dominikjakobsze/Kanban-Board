@@ -15,19 +15,52 @@
 
         <div class=" lg:col-span-3 w-full flex flex-row flex-wrap content-start">
           <div class="bg-[#2C2C37] flex-[0_0_100%] h-[10%] border-bottom-board relative"></div>
-          <p data-carousel="prev-btn" class="zindex-999 cursor-pointer p-4 absolute bg-red-500 rounded-full -translate-x-[50%] -translate-y-[50%] top-[50%] left-[30%]"></p>
-          <p data-carousel="next-btn" class="zindex-999 cursor-pointer p-4 absolute bg-red-500 rounded-full -translate-x-[50%] -translate-y-[50%] top-[50%] left-[95%]"></p>
+
+          <svg xmlns="http://www.w3.org/2000/svg" data-carousel="prev-btn" class="bi bi-caret-right-fill w-[45px] h-[45px] zindex-999 cursor-pointer absolute rounded-full -translate-x-[50%] -translate-y-[50%] top-[50%] left-[30%]" viewBox="0 0 16 16">
+            <path fill="#6360C7" class="w-full h-full object-center object-contain" d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" data-carousel="next-btn" class="bi bi-caret-right-fill w-[45px] h-[45px] zindex-999 cursor-pointer absolute rounded-full -translate-x-[50%] -translate-y-[50%] top-[50%] left-[95%]" viewBox="0 0 16 16">
+            <path fill="#6360C7" class="w-full h-full object-center object-contain" d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+          </svg>
 
 
           <div data-carousel="main" class="bg-[#21212C] overflow-hidden flex-[0_0_100%] h-[90%] flex flex-row flex-nowrap">
             <div class="p-5 gap-5 flex flex-row flex-nowrap h-full flex-[0_0_100%]">
-              <div data-column="column" class="flex-[0_0_55%] h-full bg-red-50"></div>
-              <div data-column="column" class="flex-[0_0_55%] h-full bg-red-50"></div>
-              <div data-column="column" class="flex-[0_0_55%] h-full bg-red-50"></div>
-              <div data-column="column" class="flex-[0_0_55%] h-full bg-red-50"></div>
-              <div data-column="column" class="flex-[0_0_55%] h-full bg-red-50"></div>
-              <div data-column="column" class="flex-[0_0_55%] h-full bg-red-50"></div>
-              <div data-column="new-column" class="flex-[0_0_55%] bg-[#2C2C37] cursor-pointer bg-opacity-70 hover:bg-opacity-100 h-full"></div>
+
+              <div data-column="column" class="flex-[0_0_55%] max-h-[90%] grid grid-cols-1 content-start justify-start gap-3 overflow-y-scroll">
+                <div class="w-full p-3 self-start justify-self-center bg-[#2C2C37] rounded-2xl text-base font-semibold text-slate-50">
+                  Build new UI for onboarding flow <br> It should be great! <br> It has to be done soon
+                </div>
+                <div class="w-full p-3 self-start justify-self-center bg-[#2C2C37] rounded-2xl text-base font-semibold text-slate-50">
+                  Build new UI for onboarding flow <br> It should be great! <br> It has to be done soon
+                </div>
+                <div class="w-full p-3 self-start justify-self-center bg-[#2C2C37] rounded-2xl text-base font-semibold text-slate-50">
+                  Build new UI for onboarding flow <br> It should be great! <br> It has to be done soon
+                </div>
+                <div class="w-full p-3 self-start justify-self-center bg-[#2C2C37] rounded-2xl text-base font-semibold text-slate-50">
+                  Build new UI for onboarding flow <br> It should be great! <br> It has to be done soon
+                </div>
+                <div class="w-full p-3 self-start justify-self-center bg-[#2C2C37] rounded-2xl text-base font-semibold text-slate-50">
+                  Build new UI for onboarding flow <br> It should be great! <br> It has to be done soon
+                </div>
+                <div class="w-full p-3 self-start justify-self-center bg-[#2C2C37] rounded-2xl text-base font-semibold text-slate-50">
+                  Build new UI for onboarding flow <br> It should be great! <br> It has to be done soon
+                </div>
+                <div class="w-full p-3 self-start justify-self-center bg-[#2C2C37] rounded-2xl text-base font-semibold text-slate-50">
+                  Build new UI for onboarding flow <br> It should be great! <br> It has to be done soon
+                </div>
+                <div class="w-full p-3 self-start justify-self-center bg-[#2C2C37] rounded-2xl text-base font-semibold text-slate-50">
+                  Build new UI for onboarding flow <br> It should be great! <br> It has to be done soon
+                </div>
+                <div class="w-full p-3 self-start justify-self-center bg-[#2C2C37] rounded-2xl text-base font-semibold text-slate-50">
+                  Build new UI for onboarding flow <br> It should be great! <br> It has to be done soon
+                </div>
+                <div class="w-full p-3 self-start justify-self-center bg-[#2C2C37] rounded-2xl text-base font-semibold text-slate-50">
+                  Build new UI for onboarding flow <br> It should be great! <br> It has to be done soon
+                </div>
+              </div>
+
+              <div data-column="new-column" class="flex-[0_0_55%] rounded-2xl bg-[#2C2C37] cursor-pointer bg-opacity-70 hover:bg-opacity-100 max-h-[90%]"></div>
             </div>
           </div>
 

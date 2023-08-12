@@ -8,18 +8,24 @@ export const CarouselComponentInit = () => {
         loop: false,
         align: 'start',
         axis: 'x',
-        dragFree: true,
-        watchDrag: true,
+        dragFree: false,
+        watchDrag: false,
+        slidesToScroll: 1,
      };
     carouselApi = EmblaCarousel(carouselNode, carouselOptions);
-    console.log(carouselApi.slideNodes(),"running");
+    console.log("carousel running");
+    CarouselControls();
 };
 
 export const CarouselComponentKill = () => {
     carouselApi.destroy();
-    console.log("killed");
+    console.log("carousel killed");
 };
 
 export const CarouselControls = () => {
-    
+    const prevBtn = document.querySelector('[data-carousel="prev-btn"]');
+    const nextBtn = document.querySelector('[data-carousel="next-btn"]');
+    prevBtn.addEventListener('click', carouselApi.scrollPrev, false);
+    nextBtn.addEventListener('click', carouselApi.scrollNext, false);
+    console.log("carousel controls ON");
 };
