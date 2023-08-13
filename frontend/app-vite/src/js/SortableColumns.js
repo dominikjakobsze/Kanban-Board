@@ -7,7 +7,7 @@ new Sortable(columnsContainer, {
     handle: "[data-board='column']",
     scroll: true,
     forceAutoscrollFallback: false, 
-    scrollSensitivity: 30, 
+    scrollSensitivity: 20, 
     scrollSpeed: 10, 
     bubbleScroll: true,
     group: {
