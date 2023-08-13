@@ -1,6 +1,6 @@
 *{
   scrollbar-gutter: auto !important;
-  scroll-behavior: smooth !important;
+  scroll-behavior: auto !important;
 }
 [data-layout="main"] ::-webkit-scrollbar {
   width: 7px;
