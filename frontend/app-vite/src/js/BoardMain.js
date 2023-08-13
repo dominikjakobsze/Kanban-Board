@@ -14,6 +14,6 @@ const HeightControl = () => {
     });
 };
 
-HeightControl();
+//HeightControl();
 CarouselComponentInit();
 console.log(carouselApi);
